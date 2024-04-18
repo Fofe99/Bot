@@ -1,4 +1,3 @@
-
 __author__ = "@DevBoda - @Y_U_A_F"
 __channel__ = "@YO0OD"
 
@@ -13,9 +12,9 @@ from redis import Redis
 
 client = Client(
 "quran-YO0OD",
-api_id=85,
-api_hash="",
-bot_token=""
+api_id=23507256,
+api_hash="7618aa57fcf8b9d81b5d5e668030d685",
+bot_token="6817446540:AAFCvAtRLf7JINikL24ky41pUdfYb93Ty1Y"
 )
 
 client.start()
