@@ -5,8 +5,6 @@ API_ID = 6341852765
 API_HASH = "03488b3c030fe095667e7ca22fe34954"
 TOKEN = "6817446540:AAGeg55aXe6BRC2UzPQf3Qsrm56e2ZDLVag:"
 app = Client("ChatGpt", api_id=API_ID,api_hash=API_HASH,bot_token=TOKEN) 
-
-
 @app.on_message(filters.command("start"))
 async def StartMsg(_,msg):
  await msg.reply("Hello: I am ChatGpt")
