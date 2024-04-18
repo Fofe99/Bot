@@ -1,9 +1,9 @@
 from OpsAi import Ai
 from pyrogram import Client,filters
 
-API_ID = 14170449
+API_ID = 6341852765
 API_HASH = "03488b3c030fe095667e7ca22fe34954"
-TOKEN = "6246284893:"
+TOKEN = "6817446540:AAGeg55aXe6BRC2UzPQf3Qsrm56e2ZDLVag:"
 app = Client("ChatGpt", api_id=API_ID,api_hash=API_HASH,bot_token=TOKEN) 
 
 
