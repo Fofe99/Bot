@@ -4,7 +4,7 @@ from pyrogram import Client,filters
 API_ID = 23507256
 API_HASH = "7618aa57fcf8b9d81b5d5e668030d685"
 TOKEN = "6817446540:AAFCvAtRLf7JINikL24ky41pUdfYb93Ty1Y:"
-app = Client("ChatGpt", api_id=API_ID,api_hash=API_HASH,bot_token=TOKEN) 
+@app = Client("ChatGpt", api_id=API_ID,api_hash=API_HASH,bot_token=TOKEN) 
 @app.on_message(filters.command("start"))
 async def StartMsg(_,msg):
  await msg.reply("Hello: I am ChatGpt") 
@@ -33,5 +33,5 @@ async def reply_with_text(bot, msg):
     
  
 print("Run..")   
-app.run()
+@app.run()
 Client.run()
