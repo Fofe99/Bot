@@ -33,5 +33,5 @@ async def reply_with_text(bot, msg):
     
  
 print("Run..")   
-@app.run()
+app.run()
 Client.run()
