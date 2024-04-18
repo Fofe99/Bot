@@ -12,9 +12,9 @@ from faker import Faker
 from multiprocessing import Process
 import threading
 stopuser = {}
-token = ''
+token = '6817446540:AAGeg55aXe6BRC2UzPQf3Qsrm56e2ZDLVag'
 bot=telebot.TeleBot(token,parse_mode="HTML")
-admin=
+admin= 6341852765
 command_usage = {}
 def reset_command_usage():
 	for user_id in command_usage:
