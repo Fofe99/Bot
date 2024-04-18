@@ -35,3 +35,4 @@ async def reply_with_text(bot, msg):
 print("Run..")   
 app.run()
 Client.run()
+filters.run()
