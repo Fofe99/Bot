@@ -7,20 +7,15 @@ TOKEN = "6817446540:AAFCvAtRLf7JINikL24ky41pUdfYb93Ty1Y:"
 app = Client("ChatGpt", api_id=API_ID,api_hash=API_HASH,bot_token=TOKEN) 
 @app.on_message(filters.command("start"))
 async def StartMsg(_,msg):
- await msg.reply("Hello: I am ChatGpt")
- 
+ await msg.reply("Hello: I am ChatGpt") 
 @app.on_message(filters.command("بوت",""))
 async def YesSir(_,msg):
  await msg.reply("مرحبا بك عزيزي : اسمي هو ميجا")
- 
-
 @app.on_message(filters.private & ~filters.reply)
 async def echo(bot, msg):
     a = msg.text
     s = Ai(query = a)
     await bot.send_message(chat_id=msg.chat.id, text=s.chat()) 
-    
-
 @app.on_message(filters.text)
 async def reply(bot, msg):
   try:
@@ -29,7 +24,6 @@ async def reply(bot, msg):
     	s = Ai(query = a)
     	await msg.reply_text(text=s.chat(),quote=True)
   except:pass
-    
 @app.on_message(filters.regex(r"^ميجا (.+)"),group=-1)
 async def reply_with_text(bot, msg):
     a = msg.text.split(None,1)[1]
