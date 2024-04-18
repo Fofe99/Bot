@@ -1,6 +1,7 @@
 from OpsAi import Ai
 from pyrogram import Client,filters
 
+Client =
 API_ID = 23507256
 API_HASH = "7618aa57fcf8b9d81b5d5e668030d685"
 TOKEN = "6817446540:AAFCvAtRLf7JINikL24ky41pUdfYb93Ty1Y:"
@@ -34,3 +35,4 @@ async def reply_with_text(bot, msg):
  
 print("Run..")   
 app.run()
+Client.run()
